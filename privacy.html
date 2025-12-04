@@ -3,72 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Farm Master Lite - Your farming data never leaves your device.">
     <title>Privacy Policy - Farm Master Lite</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #2c5f2d;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #2c5f2d;
+            padding-bottom: 15px;
+        }
+        
+        .meta-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #2c5f2d;
+        }
+        
+        h2 {
+            color: #2c5f2d;
+            font-size: 1.6em;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        h3 {
+            color: #3a7a3c;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #2c5f2d;
+        }
+        
+        .highlight-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .contact-info {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 30px 0;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #2c5f2d;
+            color: #666;
+            font-style: italic;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="content-section">
-            <h1>Privacy Policy - Farm Master Lite</h1>
-            
-            <h2>Your Privacy Matters</h2>
-            <p>Farm Master Lite is designed with privacy in mind:</p>
-
-            <div class="benefits">
-                <h3>NO DATA COLLECTION</h3>
-                <p>We don't collect, store, or transmit any personal information. Your farming data never leaves your device.</p>
-
-                <h3>OFFLINE FIRST</h3>
-                <p>All calculations happen on your device. No internet connection is required for the app to function.</p>
-
-                <h3>NO TRACKING</h3>
-                <p>We don't track your usage or farming data. There are no analytics, no cookies, and no tracking pixels.</p>
-
-                <h3>NO ACCOUNTS</h3>
-                <p>No sign-up required, no personal data stored. You can start using the app immediately without creating an account.</p>
-
-                <h3>LOCAL STORAGE</h3>
-                <p>All your inputs stay on your device. We don't have access to your calculations, crop selections, or farm data.</p>
-            </div>
-
-            <h2>Our Commitment</h2>
-            <p>We believe your farming data should remain private and under your control. Farm Master Lite works completely offline to ensure your information never leaves your device.</p>
-
-            <h2>Contact for Privacy Concerns</h2>
-            <p>If you have any privacy concerns or questions, please contact us at:</p>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:daniel@danicomfarm.com">daniel@danicomfarm.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:08083558291">08083558291</a></p>
-            </div>
-
-            <p><strong>Last Updated:</strong> <span id="last-updated"></span></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="current-year"></span> Farm Master Lite - DAnicom Farm</p>
-        <div class="footer-links">
-            <a href="index.html">Home</a> |
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="about.html">About Us</a> |
-            <a href="contact.html">Contact Us</a>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        
+        <div class="meta-info">
+            <strong>Effective Date:</strong> December 4, 2025<br>
+            <strong>Last Updated:</strong> December 4, 2025
         </div>
-        <p>Made with 🌾 for Nigerian Agriculture</p>
-    </footer>
 
-    <script src="script.js"></script>
+        <h2>1. Introduction</h2>
+        <p>Welcome to Farm Master Lite, developed and operated by <strong>Danicom LTD</strong> ("we," "our," or "us"). This Privacy Policy explains how we handle information when you use our mobile application, Farm Master Lite (the "App").</p>
+        <p>At Danicom LTD, we are committed to protecting your privacy. This policy describes our practices regarding data collection, use, and protection. By using Farm Master Lite, you agree to the terms outlined in this Privacy Policy.</p>
+
+        <h2>2. About Danicom LTD</h2>
+        <div class="contact-info">
+            <p><strong>Company Name:</strong> Danicom LTD</p>
+            <p><strong>Application:</strong> Farm Master Lite</p>
+            <p><strong>Contact Email:</strong> daniel@danicomfarm.com</p>
+            <p><strong>Contact Phone:</strong> 08083558291</p>
+        </div>
+        <p>Danicom LTD is dedicated to providing farmers and agricultural professionals with practical, privacy-focused tools to manage their operations effectively.</p>
+
+        <h2>3. Information We Collect</h2>
+        <div class="highlight-box">
+            <strong>We collect NO personal information.</strong>
+        </div>
+        <p>Farm Master Lite is designed to function entirely on your device without collecting, storing, or transmitting any personal data. Specifically:</p>
+        <ul>
+            <li><strong>No Personal Data Collection:</strong> We do not collect names, email addresses, phone numbers, or any other personally identifiable information.</li>
+            <li><strong>No Usage Data:</strong> We do not track how you use the App, which features you access, or how often you use it.</li>
+            <li><strong>No Location Data:</strong> We do not collect or access your device's location information.</li>
+            <li><strong>No Device Information:</strong> We do not collect information about your device, operating system, or unique device identifiers.</li>
+            <li><strong>No Analytics or Cookies:</strong> We do not use analytics services, cookies, tracking pixels, or similar technologies.</li>
+        </ul>
+
+        <h2>4. How We Use Information</h2>
+        <p>Since we do not collect any personal information or usage data, there is no information to use, share, or process. All calculations and data you enter into Farm Master Lite remain exclusively on your device.</p>
+
+        <h2>5. Data Storage and Security</h2>
+        <h3>Local Storage Only</h3>
+        <p>All data you input into Farm Master Lite, including:</p>
+        <ul>
+            <li>Crop selections</li>
+            <li>Farm calculations</li>
+            <li>Agricultural data</li>
+            <li>Personal notes or records</li>
+        </ul>
+        <p>...is stored locally on your device. This data never leaves your device and is not transmitted to our servers or any third-party services.</p>
+        
+        <h3>Your Control</h3>
+        <p>You have complete control over your data. You can delete the App at any time, which will remove all associated data from your device. We have no access to retrieve or recover this information.</p>
+
+        <h2>6. Third-Party Services</h2>
+        <p>Farm Master Lite does not integrate with or share data with any third-party services, including:</p>
+        <ul>
+            <li>Analytics platforms</li>
+            <li>Advertising networks</li>
+            <li>Social media platforms</li>
+            <li>Cloud storage services</li>
+            <li>Any other external services</li>
+        </ul>
+
+        <h2>7. Offline Functionality</h2>
+        <p>Farm Master Lite is designed as an <strong>offline-first application</strong>. The App:</p>
+        <ul>
+            <li>Does not require an internet connection to function</li>
+            <li>Performs all calculations locally on your device</li>
+            <li>Does not communicate with external servers</li>
+            <li>Works completely independently without network access</li>
+        </ul>
+
+        <h2>8. No User Accounts Required</h2>
+        <p>Farm Master Lite does not require you to:</p>
+        <ul>
+            <li>Create an account</li>
+            <li>Provide a username or password</li>
+            <li>Register with any personal information</li>
+            <li>Sign in or authenticate</li>
+        </ul>
+        <p>You can start using the App immediately after installation without any personal data submission.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>Farm Master Lite does not knowingly collect information from anyone, including children under the age of 13 (or the applicable age of digital consent in your jurisdiction). Since we collect no data at all, the App is safe for users of all ages.</p>
+
+        <h2>10. Your Privacy Rights</h2>
+        <p>Since we do not collect, store, or process any personal data, traditional privacy rights such as access, correction, or deletion requests do not apply. However, you always have the right to:</p>
+        <ul>
+            <li>Use the App without providing any personal information</li>
+            <li>Uninstall the App at any time</li>
+            <li>Contact us with privacy questions or concerns</li>
+        </ul>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational, or regulatory reasons. When we make changes, we will:</p>
+        <ul>
+            <li>Update the "Last Updated" date at the top of this policy</li>
+            <li>Notify users through the App or other appropriate channels if the changes are significant</li>
+        </ul>
+        <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your privacy.</p>
+
+        <h2>12. International Users</h2>
+        <p>Farm Master Lite can be used anywhere in the world. Since we do not collect or transfer any data, international data transfer regulations do not apply. Your data remains on your device regardless of your location.</p>
+
+        <h2>13. Legal Compliance</h2>
+        <p>While we do not collect personal data, we remain committed to complying with applicable privacy laws and regulations, including but not limited to:</p>
+        <ul>
+            <li>General Data Protection Regulation (GDPR) - European Union</li>
+            <li>California Consumer Privacy Act (CCPA) - United States</li>
+            <li>Nigeria Data Protection Regulation (NDPR) - Nigeria</li>
+            <li>Other applicable local and international privacy laws</li>
+        </ul>
+
+        <h2>14. Our Privacy Commitment</h2>
+        <p>At Danicom LTD, we believe that your farming data is yours alone. Farm Master Lite was built with the following principles:</p>
+        <ul>
+            <li><strong>Privacy by Design:</strong> We built the App to require no data collection from the ground up</li>
+            <li><strong>User Control:</strong> You maintain complete ownership and control of your data</li>
+            <li><strong>Transparency:</strong> We are open and honest about our privacy practices</li>
+            <li><strong>Security:</strong> By not collecting data, we eliminate the risk of data breaches</li>
+            <li><strong>Trust:</strong> We earn your trust by respecting your privacy completely</li>
+        </ul>
+
+        <h2>15. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+        <div class="contact-info">
+            <p><strong>Danicom LTD</strong></p>
+            <p>Email: daniel@danicomfarm.com</p>
+            <p>Phone: 08083558291</p>
+        </div>
+        <p>We will respond to your inquiry as promptly as possible.</p>
+
+        <h2>16. Dispute Resolution</h2>
+        <p>If you have concerns about how we handle privacy matters, please contact us first using the information above. We are committed to working with you to resolve any issues fairly and promptly.</p>
+
+        <hr>
+
+        <div class="footer-note">
+            <p><strong>Thank you for trusting Farm Master Lite and Danicom LTD with your agricultural management needs.</strong></p>
+        </div>
+    </div>
 </body>
 </html>
-
